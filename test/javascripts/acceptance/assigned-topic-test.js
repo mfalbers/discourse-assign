@@ -131,7 +131,7 @@ acceptance("Discourse Assign | Assigned topic", function (needs) {
     );
   });
 
-  test("Shows assignement notification", async (assert) => {
+  test("Shows assignment notification", async function (assert) {
     updateCurrentUser({ can_assign: true });
 
     await visit("/u/eviltrout/notifications");
